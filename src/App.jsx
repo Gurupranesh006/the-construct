@@ -207,6 +207,7 @@ const AuthModal = ({ onClose }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [forgotMode, setForgotMode] = useState(false);
   const [resetSent, setResetSent] = useState(false);
+  const [unconfirmed, setUnconfirmed] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [info, setInfo] = useState(null);
@@ -215,15 +216,36 @@ const AuthModal = ({ onClose }) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setUnconfirmed(false);
     try {
       if (isLogin) {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
       } else {
-        const { error } = await supabase.auth.signUp({ email, password });
+        const { data, error } = await supabase.auth.signUp({ email, password });
         if (error) throw error;
-        alert('Check your email for the confirmation link!');
+        // When email confirmation is enabled, signUp returns no session.
+        if (!data.session) {
+          setUnconfirmed(true);
+          setInfo('Account created. Check your email to confirm your address.');
+        } else {
+          setInfo('Account created. You can now sign in.');
+        }
       }
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleResend = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const { error } = await supabase.auth.resend({ type: 'signup', email });
+      if (error) throw error;
+      setInfo('Confirmation email resent. Check your inbox.');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -331,6 +353,12 @@ const AuthModal = ({ onClose }) => {
             {isLogin && (
               <p className="auth-switch" onClick={() => setForgotMode(true)} style={{ marginTop: '14px' }}>
                 Forgot password?
+              </p>
+            )}
+
+            {!isLogin && unconfirmed && (
+              <p className="auth-switch" onClick={() => handleResend()} style={{ marginTop: '14px' }}>
+                Didn't get the email? Resend confirmation
               </p>
             )}
 
