@@ -1,0 +1,269 @@
+[
+  {
+    "name": "access-control",
+    "path": "access-control",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/access-control/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "authentication",
+    "path": "authentication",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/authentication/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "business-logic",
+    "path": "business-logic",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/business-logic/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "clickjacking",
+    "path": "clickjacking",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/clickjacking/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "cors",
+    "path": "cors",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/cors/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "csrf",
+    "path": "csrf",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/csrf/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "directory-traversal",
+    "path": "directory-traversal",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/directory-traversal/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "dom-based",
+    "path": "dom-based",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/dom-based/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "file-upload-vulnerabilities",
+    "path": "file-upload-vulnerabilities",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/file-upload-vulnerabilities/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "general",
+    "path": "general",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "http-host-header",
+    "path": "http-host-header",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/http-host-header/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "http-request-smuggling",
+    "path": "http-request-smuggling",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/http-request-smuggling/README.md",
+        "fileName": "README.md"
+      },
+      {
+        "title": "TIPS",
+        "path": "/content/http-request-smuggling/TIPS.md",
+        "fileName": "TIPS.md"
+      }
+    ]
+  },
+  {
+    "name": "information-disclosure",
+    "path": "information-disclosure",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/information-disclosure/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "oauth-authentication",
+    "path": "oauth-authentication",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/oauth-authentication/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "os-command-injection",
+    "path": "os-command-injection",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/os-command-injection/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "server-side-template-injection",
+    "path": "server-side-template-injection",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/server-side-template-injection/README.md",
+        "fileName": "README.md"
+      },
+      {
+        "title": "TIPS",
+        "path": "/content/server-side-template-injection/TIPS.md",
+        "fileName": "TIPS.md"
+      }
+    ]
+  },
+  {
+    "name": "sql-injection",
+    "path": "sql-injection",
+    "files": [
+      {
+        "title": "cheatsheet",
+        "path": "/content/sql-injection/cheatsheet.md",
+        "fileName": "cheatsheet.md"
+      },
+      {
+        "title": "README",
+        "path": "/content/sql-injection/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "ssrf",
+    "path": "ssrf",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/ssrf/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "web-cache-poisoning",
+    "path": "web-cache-poisoning",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/web-cache-poisoning/README.md",
+        "fileName": "README.md"
+      },
+      {
+        "title": "TIPS",
+        "path": "/content/web-cache-poisoning/TIPS.md",
+        "fileName": "TIPS.md"
+      }
+    ]
+  },
+  {
+    "name": "websockets",
+    "path": "websockets",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/websockets/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "xss",
+    "path": "xss",
+    "files": [
+      {
+        "title": "README",
+        "path": "/content/xss/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  },
+  {
+    "name": "xxe",
+    "path": "xxe",
+    "files": [
+      {
+        "title": "PAYLOADS",
+        "path": "/content/xxe/PAYLOADS.md",
+        "fileName": "PAYLOADS.md"
+      },
+      {
+        "title": "README",
+        "path": "/content/xxe/README.md",
+        "fileName": "README.md"
+      }
+    ]
+  }
+]
