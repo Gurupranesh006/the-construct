@@ -94,6 +94,10 @@ the-construct/
 
 Released under the [MIT License](./LICENSE). You are free to use, modify, and distribute this project with attribution.
 
+## Attribution & Content Sources
+
+The application code is original and MIT-licensed. The **writeup content** under `public/content/` is *adapted* from third-party sources — primarily [thelicato/portswigger-labs](https://github.com/thelicato/portswigger-labs) and the [PortSwigger Web Security Academy](https://portswigger.net/web-security). That source repository declares **no license**, so the content is included for educational use with attribution, not as a license grant. Full details in [ATTRIBUTION.md](./ATTRIBUTION.md). The Construct is not affiliated with or endorsed by PortSwigger.
+
 ## Contributing
 
 1. Fork the repository.

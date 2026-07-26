@@ -764,6 +764,21 @@ function App() {
           } />
         </Routes>
       </main>
+
+      <footer style={{ marginTop: '40px', padding: '20px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.8rem', borderTop: '1px solid var(--glass-border)' }}>
+        <p style={{ margin: 0 }}>
+          Writeup content adapted from{' '}
+          <a href="https://github.com/thelicato/portswigger-labs" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none' }}>
+            thelicato/portswigger-labs
+          </a>{' '}
+          and{' '}
+          <a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none' }}>
+            PortSwigger Web Security Academy
+          </a>.
+        </p>
+        <p style={{ margin: '6px 0 0' }}>Educational use only — not affiliated with or endorsed by PortSwigger.</p>
+      </footer>
+
       {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
     </div>
   );
