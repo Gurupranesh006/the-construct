@@ -34,7 +34,7 @@ cd the-construct
 npm install
 
 # Configure Supabase (optional — app runs without it)
-cp .env.local.example .env.local   # then fill in:
+cp .env.example .env.local   # then fill in:
 #   VITE_SUPABASE_URL=...
 #   VITE_SUPABASE_ANON_KEY=...
 
@@ -87,6 +87,21 @@ the-construct/
 
 - `.env.local` is gitignored — Supabase keys are never committed.
 - The anon key is a public client key by design; no service-role secret is used client-side.
+
+---
+
+## License
+
+Released under the [MIT License](./LICENSE). You are free to use, modify, and distribute this project with attribution.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feat/your-feature`).
+3. Commit your changes (`git commit -m "feat: ..."`).
+4. Push and open a pull request.
+
+For local Supabase sync, copy `.env.example` to `.env.local` and fill in your project URL and anon key (see above). PRs that add real secrets or credentials will be rejected.
 
 ---
 
